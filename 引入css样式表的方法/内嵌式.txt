@@ -1,0 +1,16 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="texxt/html; charset=utf-8" />
+		<title>
+			使用css内嵌式
+		</title>
+		<style type="text/css">
+		h2{text-align:center; color:green;}
+		</style>
+	</head>
+		<body>
+			<h2 >使用css式修饰二级标题的字体大小和颜色</h2>
+		</body>
+	
+</html>

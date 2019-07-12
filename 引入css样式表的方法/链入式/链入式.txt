@@ -1,0 +1,15 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="texxt/html; charset=utf-8" />
+		<title>
+			使用css链入式
+		</title>
+		<link href="css.css" type="text/css" rel="stylesheet" />
+	</head>
+		<body>
+			<h2>使用css链入式修饰二级标题的字体大小和颜色</h2>
+			<p>lizheng</p>
+		</body>
+	
+</html>
