@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>QQ空间标签选项卡图片切换代码 - 源码之家</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- 代码 开始 -->
+<div class="banner">
+	<ul>
+		<li><img src="images/section4_slide1.jpg" width="1000" height="600" alt="心得分享" /></li>
+		<li><img src="images/section4_slide2.jpg" width="1000" height="600" alt="运动交友" /></li>
+		<li><img src="images/section4_slide3.jpg" width="1000" height="600" alt="约跑" /></li>
+		<li><img src="images/section4_slide4.jpg" width="1000" height="600" alt="卡路里消耗监测" /></li>
+		<li><img src="images/section4_slide5.jpg" width="1000" height="600" alt="睡眠质量监控" /></li>
+		<li><img src="images/section4_slide6.jpg" width="1000" height="600" alt="专业教练 近在咫尺 谷雨东" /></li>
+	</ul>
+	<ol class="dots">
+		<li class="dot dot1 active">心得分享</li>
+		<li class="dot dot2">运动交友</li>
+		<li class="dot dot3">约跑</li>
+		<li class="dot dot4">卡路里监测</li>
+		<li class="dot dot5">睡眠监控</li>
+		<li class="dot dot6">私人教练</li>
+	</ol>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/unslider.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.banner').unslider({arrows:true,dots:true});
+	$('.banner .dots').eq(1).hide();
+	$('.banner .dot').mouseover(function(){
+		$(this).closest('.banner').find('ul').stop();
+		$(this).click();
+	});
+	$('.banner').hover(function(){
+		$(this).toggleClass('hover');
+	});
+});
+</script>
+
+<!-- 代码 结束 -->
+
+<div style="text-align:center;">
+<p>来源：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div>
+
+</body>
+</html>

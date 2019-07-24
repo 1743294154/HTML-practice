@@ -1,0 +1,36 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none}
+a,img{border:0;}
+body{font:13px/20px "Hiragino Sans GB", "Microsoft Yahei", "SimHei";background:#ad0833}
+a:link, a:visited{outline:none;text-decoration:none;color:#7f7f7f;}
+a:hover, a:focus{text-decoration:none;color:#000;}
+a img, :link img, :visited img{border:0;}
+
+
+/* 轮播 */
+.banner{position:relative;overflow:auto;width:1000px;margin:0 auto;}
+.banner ul li{float:left;}
+.banner .arrows{display:none;}
+.banner:hover .arrows,
+.banner.hover .arrows{display:block;}
+.banner .arrows{position:absolute;z-index:20;}
+.banner .arrows .prev,
+.banner .arrows .next{position:absolute;width:76px;height:77px;font:0/0 a;color:transparent;cursor:pointer;}
+.banner .arrows .prev{left:30px;background:url(img/slide_arrow_left.png) no-repeat;}
+.banner .arrows .next{left:900px;background:url(img/slide_arrow_right.png) no-repeat;}
+.banner ul li{height:660px;}
+.banner .arrows{top:270px;}
+.dots{position:absolute;width:1000px;height:60px;top:600px;text-align:center;font-size:15px;background:#fff;}
+.dot{float:left;line-height:56px;width:166px;border-bottom:2px solid;border-top:2px solid #e8e8e8;cursor:pointer;}
+.dot1{color:#e33189;border-bottom-color:#f3bfd9;}
+.dot1.active{background:#f3bfd9;}
+.dot2{color:#24adac;border-bottom-color:#a4f7f6;}
+.dot2.active{background:#a4f7f6;}
+.dot3{color:#dc6f23;border-bottom-color:#edcfbb;}
+.dot3.active{background:#edcfbb;}
+.dot4{color:#da4e4e;border-bottom-color:#f0b5b5;}
+.dot4.active{background:#f0b5b5;}
+.dot5{color:#8344c3;border-bottom-color:#c0c8f4;}
+.dot5.active{background:#c0c8f4;}
+.dot6{width:170px;color:#1774e2;border-bottom-color:#b8e6fb;}
+.dot6.active{background:#b8e6fb;}
