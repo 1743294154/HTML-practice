@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				background-color:gainsboro;
+				margin: 20px;
+			}
+			#box{
+				width: 810px;
+				height: 320px;
+				overflow: hidden;
+				box-shadow: 0 0 0 30px transparent;
+			}
+			#img{
+				position:relative;
+				float: left;
+				height: 320px;
+				width: 160px;
+				-webkit-transition: all 0.3s ease-in-out;
+    			-moz-transition: all 0.3s ease-in-out;
+    			-o-transition: all 0.3s ease-in-out;
+    			-ms-transition: all 0.3s ease-in-out;
+    			transition: all 0.3s ease-in-out;
+				border:1px solid white;
+			}
+			#box #img span
+			{
+				height: 80px;
+				width:160px;
+				font-size:19px ;
+				color: white;
+				background:black;
+				opacity: 0.5;
+				line-height: 80px;
+				text-align: left;
+				position:absolute;
+				left:0px;
+				top: 260px;
+				overflow: hidden;
+				transition-duration:0.5s;
+			}
+			#box:hover #img{
+				width: 40px;
+			}
+			#box #img:hover{
+				width: 640px;
+			}
+			#box #img:hover span{
+				width:640px;
+				transition-duration:0.5s;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="box">
+			<div id="img"><img src="images/1.jpg" alt=""><span>Keep Smile.First</span></div>
+			<div id="img"><img src="images/2.jpg" alt=""><span>Keep Smile.First</span></div>
+			<div id="img"><img src="images/3.jpg" alt=""><span>Keep Smile.First</span></div>
+			<div id="img"><img src="images/4.jpg" alt=""><span>Keep Smile.First</span></div>
+			<div id="img"><img src="images/5.jpg" alt=""><span>Keep Smile.First</span></div>
+		</div>
+	<div style="text-align:center;">
+<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div>
+
+	</body>
+</html>
