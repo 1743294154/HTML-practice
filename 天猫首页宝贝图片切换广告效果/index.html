@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<title>天猫首页宝贝图片切换广告效果- 源码之家</title>
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+</head>
+<body>
+<div class="tmall-ad" style="margin:30px auto">
+  <div class="tempWrap" style="overflow:hidden; position:relative; width:200px">
+    <ul class="fCs-con" style="width: 600px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+      <li style="float: left; width: 200px;"><a href="#"><img src="images/1.jpg"></a></li>
+      <li style="float: left; width: 200px;"><a href="#"><img src="images/2.jpg"></a></li>
+      <li style="float: left; width: 200px;"><a href="#"><img src="images/3.jpg"></a></li>
+    </ul>
+  </div>
+<ul class="fCs-nav">
+<li class="fCs-nav1 on" style="width: 160px; display: list-item;"><a href="#" target="_blank">保暖内衣 全场包邮</a><s></s></li>
+<li class="fCs-nav2" style="width: 140px; display: list-item;"><a href="#" target="_blank">冬季新品 火热抢购</a><s></s></li>
+<li class="fCs-nav3" style="width: 140px; display: list-item;"><a href="#" target="_blank">男款棉衣精选包邮</a><s></s></li>
+</ul>
+</div>
+<script type="text/javascript">jQuery(".tmall-ad").slide({ titCell:".fCs-nav li", mainCell:".fCs-con", effect:"left",delayTime:500,easing:"easeInOutQuad",startFun:function(i){ jQuery(".tmall-ad .fCs-nav li").eq(i).animate({"width":160},200).siblings().animate({"width":140},200) }});</script>
+<div style="text-align:center;">
+<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div>
+</body>
+</html>
